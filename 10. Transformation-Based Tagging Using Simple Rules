@@ -1,0 +1,17 @@
+sentence = "The cats run"
+
+tags = [('The', 'NN'),
+        ('cats', 'NN'),
+        ('run', 'NN')]
+
+for i in range(len(tags)):
+    word, tag = tags[i]
+
+    if word.lower() == 'the':
+        tags[i] = (word, 'DT')
+    elif word.endswith('s'):
+        tags[i] = (word, 'NNS')
+    elif word == 'run':
+        tags[i] = (word, 'VB')
+
+print(tags)
