@@ -1,0 +1,27 @@
+def finite_state(string):
+    state = "q0"
+    for char in string:
+        if state == "q0":
+            if char == "a":
+                state = "q1"
+        elif state == "q1":
+            if char == "b":
+                state = "q2"
+            elif char == "a":
+                state = "q1"
+            else:
+                state = "q0"
+        elif state == "q2":
+            if char == "a":
+                state = "q1"
+            else:
+                state = "q0"
+
+    if state == "q2":
+        return "The string is matched"
+    else:
+        return "No match"
+
+
+s = input("Enter a string: ")
+print(finite_state(s))
