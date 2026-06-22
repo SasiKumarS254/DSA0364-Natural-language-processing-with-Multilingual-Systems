@@ -1,0 +1,6 @@
+text = "Ravi went to school. He was happy."
+
+antecedent = "Ravi"
+pronoun = "He"
+
+print(pronoun, "refers to", antecedent)
