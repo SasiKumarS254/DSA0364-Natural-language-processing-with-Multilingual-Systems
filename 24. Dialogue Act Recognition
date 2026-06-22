@@ -1,0 +1,4 @@
+sentence = "How are you?"
+
+if sentence.endswith("?"):
+    print("Dialogue Act: Question")
