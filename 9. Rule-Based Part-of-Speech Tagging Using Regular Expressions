@@ -1,0 +1,17 @@
+import nltk
+
+patterns = [
+    (r'.*ing$', 'VBG'),
+    (r'.*ed$', 'VBD'),
+    (r'.*es$', 'VBZ'),
+    (r'.*s$', 'NNS'),
+    (r'.*', 'NN')
+]
+
+tagger = nltk.RegexpTagger(patterns)
+
+sentence = "Cats are playing games"
+
+tokens = nltk.word_tokenize(sentence)
+
+print(tagger.tag(tokens))
