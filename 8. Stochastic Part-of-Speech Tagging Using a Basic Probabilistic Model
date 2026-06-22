@@ -1,0 +1,14 @@
+pos_prob = {
+    "the": "DT",
+    "cat": "NN",
+    "dog": "NN",
+    "eats": "VBZ",
+    "runs": "VBZ",
+    "fish": "NN"
+}
+
+sentence = input("Enter a sentence: ").lower().split()
+
+for word in sentence:
+    tag = pos_prob.get(word, "UNK")
+    print((word, tag))
