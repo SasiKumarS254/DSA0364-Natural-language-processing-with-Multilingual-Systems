@@ -1,0 +1,7 @@
+text = [
+    "The cat is sleeping.",
+    "It is on the sofa."
+]
+
+if len(text) > 1:
+    print("Text is coherent")
