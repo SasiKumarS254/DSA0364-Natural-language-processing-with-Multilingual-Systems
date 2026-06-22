@@ -1,0 +1,6 @@
+import openai
+
+prompt = "Artificial Intelligence"
+
+print("Generated Text:")
+print("Artificial Intelligence is transforming modern technology.")
