@@ -1,0 +1,8 @@
+from nltk import bigrams
+
+text = "the cat eats fish the cat drinks milk".split()
+
+bg = list(bigrams(text))
+
+for i in bg:
+    print(i)
