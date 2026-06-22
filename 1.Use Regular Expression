@@ -1,0 +1,9 @@
+import re
+text="phone number 8390693886";
+pattern=r"\d{10}"
+match=re.search(pattern,text)
+if match:
+    print("fond:",match.group())
+    print("position:",match.start())
+else:
+    print("No match")
