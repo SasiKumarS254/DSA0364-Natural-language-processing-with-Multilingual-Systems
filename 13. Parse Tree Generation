@@ -1,0 +1,11 @@
+from nltk.tree import Tree
+
+tree = Tree('S', [
+    Tree('NP', ['Birds']),
+    Tree('VP', [
+        Tree('V', ['fly'])
+    ])
+])
+
+print(tree)
+tree.pretty_print()
