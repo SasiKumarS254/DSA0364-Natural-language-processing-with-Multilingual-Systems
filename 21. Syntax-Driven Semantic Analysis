@@ -1,0 +1,8 @@
+import nltk
+
+sentence = "The smart student solved the problem"
+
+tokens = nltk.word_tokenize(sentence)
+tags = nltk.pos_tag(tokens)
+
+print(tags)
